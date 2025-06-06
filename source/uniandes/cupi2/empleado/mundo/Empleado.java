@@ -254,7 +254,13 @@ public class Empleado
      */
     public String metodo2( )
     {
-        return "Respuesta 2";
+        String nombreCompleto = nombre + " " + apellido;
+        int edad = calcularEdad();
+        double salarioActual = salario;
+
+        return "Nombre completo: " + nombreCompleto +
+                "\nEdad: " + edad + " años" +
+                "\nSalario: $" + salarioActual;
     }
 
 }
